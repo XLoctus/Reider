@@ -1,91 +1,263 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Gráfico de Barras con SVG</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabla Básica</title>
-</head>
-<body>
-    <table border="1" cellspacing="0" cellpadding="5"> <!-- Define los bordes y espacio entre celdas -->
-        <thead>
-            <tr>
-                <th>costos</th>
-                <th>tiempo</th>
-                <th>ok</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>19</td>
-                <td>4</td>
-                <td>
-                    <input type="checkbox" name="" value="" />
-                </td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>8</td>
-                <td>
-                    <input type="checkbox" name="" value="" />
-                </td>
-                <tr>
-                    <td>20</td>
-                    <td>12</td>
-                    <td>
-                        <input type="checkbox" name="" value="" />
-                    </td> <tr>
-                        <td>18</td>
-                        <td>16</td>
-                        <td>
-                            <input type="checkbox" name="" value="" />
-                        </td>
-            </tr>
-        </tbody>
+
     </table>
-    <canvas id="myBarChart" width="100" height="100"></canvas>
+    </section>
+    <br>
+    <section>
+        <table border="1">
+            <tr>
+                <th style="border: none;"></th>
 
-    <script>
-        // Configuración para el gráfico de barras
-        const ctx = document.getElementById('myBarChart').getContext('2d');
-        const myBarChart = new Chart(ctx, {
-            type: 'bar', // Tipo de gráfico
-            data: {
-                labels: ['1', '2', '3', '4', '5'], // Etiquetas del eje horizontal
-                datasets: [{
-                    label: 'Ventas', // Leyenda para la serie de datos
-                    data: [12, 19, 3, 5, 2], // Datos para el gráfico
-                    backgroundColor: 'rgba(54, 162, 235, 0.5)', // Color de las barras
-                    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde de las barras
-                    borderWidth: 1 // Ancho del borde
-                }]
-            },
-            options: {
-                scales: {
-                    x: {
-                        title: {
-                            display: true, // Mostrar título del eje horizontal
-                            text: 'Meses' // Texto del título
-                        }
-                    },
-                    y: {
-                        beginAtZero: true, // Comienza el eje Y en cero
-                        title: {
-                            display: true, // Mostrar título del eje vertical
-                            text: 'Cantidad' // Texto del título
-                        }
-                    }
-                }
-            }
-        });
-    </script>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">30</td>
+                <td colspan="4" style="border: none;"></td>
 
+                <th colspan="5" rowspan="2">costos</th>
 
+                <th colspan="6" rowspan="2">tiempos</th>
+
+                <th colspan="2" rowspan="2">ok</th>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">29</td>
+
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">28</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td colspan="5">19</td>
+                <td colspan="6">4</td>
+                <td colspan="2">
+                    <input type="checkbox" name="1columna" id="2columna">
+                </td>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">28</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td colspan="5">13</td>
+                <td colspan="6">8</td>
+                <td colspan="2">
+                    <input type="checkbox" name="1columna" id="2columna">
+                </td>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">28</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td colspan="5">20</td>
+                <td colspan="6">12</td>
+                <td colspan="2">
+                    <input type="checkbox" name="1columna" id="2columna">
+                </td>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">28</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td colspan="5">18</td>
+                <td colspan="6">16</td>
+                <td colspan="2">
+                    <input type="checkbox" name="1columna" id="2columna">
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">27</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">26</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">25</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">24</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">23</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">22</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">21</td>
+            
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">20</td>
+                <td colspan="10" style="border: none ;"></td>
+                <td rowspan="20" colspan="2">20%</td>
+            </tr>
+            <tr>
+            
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">19</td>
+                <td colspan="1" style="border: none ;"></td>
+                <td rowspan="19" colspan="3">19%</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">18</td>
+                <td colspan="13" style="border: none ;"></td>
+                <td rowspan="18" colspan="2">18%</td>
+            </tr>
+            <tr>
+                <td style="border: none;">C</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">17</td>
+            </tr>
+            <tr>
+                <td style="border: none;">O</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">16</td>
+            </tr>
+            <tr>
+                <td style="border: none;">S</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">15</td>
+            
+            </tr>
+            <tr>
+                <td style="border: none;">T</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">14</td>
+            </tr>
+            <tr>
+                <td style="border: none;">O</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">13</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td rowspan="13" colspan="3">13%</td>
+            </tr>
+            <tr>
+                <td style="border: none;">S</td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">12</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">11</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">10</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">09</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">08</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">07</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">06</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">05</td>
+                <td colspan="17" style="border: none ;"></td>
+                <td rowspan="5" colspan="3">5% </td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">04</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">03</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">02</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border-top: none; border-bottom:none ; border-right: none;">01</td>
+                
+            </tr>
+            
+            <tr>
+                <td style="border: none;"></td>
+
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td rowspan="-21">18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;">T</td>
+                <td style="border: none;">I</td>
+                <td style="border: none;">E</td>
+                <td style="border: none;">M</td>
+                <td style="border: none;">P</td>
+                <td style="border: none;">O</td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+                <td style="border: none;"></td>
+            </tr>
+        </table>
+
+    </section>
 </body>
+
 </html>
