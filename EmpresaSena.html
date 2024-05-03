@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Empresa Sena</legend>
+        <fieldset>
+            <legend>Produción</legend>
+
+            <br>
+            <label for="lblcantidad">cantidad </label>
+            <input type="number" name="lblcantidad" id="lblcantidad">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="lblcantidad">cantidad </label>
+            <input type="number" name="lblcantidad" id="lblcantidad">
+            <br>
+            <div class="centrar">
+                <img src="img/Derivados-lacteos-1024x1024.jpg" width="220" height="200">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="img/verduras.jpg" width="220" height="200">
+                <br>
+                <input type="radio" id="lbllacteos" name="lbllacteos" value="1">
+                <label for="TpAlimento">Lacteos</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="lbllacteos" name="lbllacteos" value="1">
+                <label for="TpAlimento">Verduras</label>
+                <br>
+                <br>
+                <label for="lblcantidad">cantidad </label>
+                <input type="number" name="lblcantidad" id="lblcantidad">
+                <br>
+                <img src="img/FAST-FOOD-CHAIN-NUTRITION-GUIDE-HEADER-1200x429.jpeg" width="300">
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                <label for="TpAlimento">Otro</label>
+
+                <input type="radio" id="lbllacteos" name="otro" value="1">
+        </fieldset>
+    </fieldset>
+
+    <input type="button" value="Enviar" id="lblEnviar">
+    <br>
+    <br>
+    <fieldset>
+        <legend>tipo poblacion</legend>
+        <fieldset>
+            <table>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <h4>
+                                <input type="checkbox" id="lblindi" name="lblindi" value="1">
+                                <label for="lblindi">indigena</label>
+                                <br>
+                                <input type="checkbox" id="lblotros" name="lblotros" value="1" checked>
+                                <label for="lblotros">mulato</label>
+                                <br>
+                                <input type="checkbox" id="lblotro" name="lblotro" value="1">
+                                <label for="lblotro">otro</label>
+                                <br>
+                                <br>
+
+                            </h4>
+                        </td>
+
+                        <td rowspan="3">
+                            <fieldset>
+                                <legend>Cargo</legend>
+                                <img src="img/2643361.png" width="20" height="30">
+                                <input type="checkbox" id="txtcargo" name="txtcargo" value="" placeholder="cargo"
+                                    required; checked>
+                                <label for="txtcargo">Instructor</label>
+                                <br>
+                                <img src="img/obrero.jpg" width="20" height="30">
+                                <input type="checkbox" id="txtcargo" name="txtcargo" value="" placeholder="cargo"
+                                    required>
+                                <label for="txtcargo">Obrero</label>
+                                <br>
+                                <img src="img/Medico.avif" width="20" height="30">
+                                <input type="checkbox" id="txtcargo" name="txtcargo" value="" placeholder="cargo"
+                                    required; checked>
+                                <label for="txtcargo">Medico</label>
+                                <br>
+                                <br>
+                                </datalist>
+                                <label for="tmpTurno">horario</label>
+                                <br>
+                                <input type="time" name="tmpTurno" id="tlbTurno" list="lstTurno">
+                                <datalist id="lstTurno">
+                                    <option value="05:30"></option>
+                                    <option value="06:30"></option>
+                                    <option value="07:30"></option>
+                                    <option value="08:30"></option>
+                                    <option value="09:30"></option>
+                                    <option value="10:00"></option>
+                                </datalist>
+                            </fieldset>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="">
+                            <label for="lblFecNacimiento">Fecha de Nacimiento</label>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="date" name="lblFecNacimiento " id="datFecNacimiento">
+                        </td>
+                    </tr>
+                </table>
+            </table>
+            <br>
+            <br>
+                <table border="1" cellspacing="0" cellpadding="5"> <!-- Define los bordes y espacio entre celdas -->
+                    <thead>
+                        <tr>
+                            <th>costos</th>
+                            <th>tiempo</th>
+                            <th>ok</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19</td>
+                            <td>4</td>
+                            <td>
+                                <input type="checkbox" name="" value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>8</td>
+                            <td>
+                                <input type="checkbox" name="" value="" />
+                            </td>
+                            <tr>
+                                <td>20</td>
+                                <td>12</td>
+                                <td>
+                                    <input type="checkbox" name="" value="" />
+                                </td> <tr>
+                                    <td>18</td>
+                                    <td>16</td>
+                                    <td>
+                                        <input type="checkbox" name="" value="" />
+                                    </td>
+                        </tr>
+
+                </table>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>

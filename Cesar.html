@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Repaso Html</h1>
+    <form action="documento.txt" method="post"></form>
+    <fieldset>
+        <legend>Mi botiquin</legend>
+        <label for="lblCodigo">Numero:</label>
+        <input type="number" name="lblCodigo" id="lblCodigo">
+        <br>
+        <label for="lblDescripcion">Descripcion</label>
+        <input type="text" name="lblDescripcion" id="txtDescripcion">
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Medicamentos</legend>
+        <label for="lblpoMedicamento"> Tipo Medicamento</label>
+        <input type="radio" name="rdi" id="rdi" checked> Generico
+        <input type="radio" name="rdi" id="rdi"> De marca
+        <br>
+        <hr>
+
+        <label for="lblQuimica">Quimica</label>
+        <input type="checkbox" name="" id="chkQuimica">
+
+        <select name="slcMq" id="slcMq">
+            <option value="Seleccione">Seleccione</option>
+            <option value="mqOmeprazol">Omeprazol</option>
+            <option value="mqBuscapina">Buscapina</option>
+            <option value="mqEvinen">Evinen</option>
+            <option value="mqSitenafil">Sitenafil</option>
+            <option value="mqViagra">Viagra</option>
+            <br>
+
+        </select>
+        <label for="lblFecFacbricacion">Fecha Fabricacion</label>
+        <input type="date" name="lblFecFacbricacion " id="datFecFacbricacion">
+        <label for="lblFecVencimiento">Fecha Vencimiento</label>
+        <input type="date" name="lblFecVencimiento " id="datFecvencimiento">
+        <label for="CdMedicamento">Cantidad:</label>
+        
+        <input type="color" value="#FFD433" name="clrRiesgo" id="clrRiesgo">
+        <br>
+        <label for="lblNatural">Natural</label>
+        <input type="checkbox" name="" id="chkQuimica">
+        <select name="slcMq" id="slcMq">
+            <option value="Seleccione">Seleccione</option>
+            <option value="mqMelenaLeon">Melena leon</option>
+            <option value="mqResveratrol">Resveratrol</option>
+            <option value="mqOtoryx">Evinen</option>
+            <option value="mqGingoBiloba">Gingobiloba</option>
+            <option value="mqVitaminaB">VitaminaB</option>
+        </select>
+        <label for="lblFecFacbricacion">Fecha Fabricacion</label>
+        <input type="date" name="lblFecFacbricacion " id="datFecFacbricacion">
+        <label for="lblFecVencimiento">Fecha Vencimiento</label>
+        <input type="date" name="lblFecVencimiento " id="datFecvencimiento">
+        <label for="CdMedicamento">Cantidad:</label>
+        <input type="number" id="CdMedicamento" name="Cantidad" min="1" max="100" placeholder="Max 100">
+        <input type="color" value="#FFD433  " name="clrRiesgo" id="clrRiesgo">
+        <br>
+        <label for="lblOlistica">Holistica</label>
+        <input type="checkbox" name="" id="chkOlictica">
+        <select name="slcMq" id="slcMq">
+            <option value="Seleccione">Seleccione</option>
+            <option value="mqOmeprazol">Omeprazol</option>
+            <option value="mqBuscapina">Buscapina</option>
+            <option value="mqEvinen">Evinen</option>
+            <option value="mqSitenafil">Sitenafil</option>
+            <option value="mqViagra">Viagra</option>
+        </select>
+        <label for="lblFecFacbricacion">Fecha Fabricacion</label>
+        <input type="date" name="lblFecFacbricacion " id="datFecFacbricacion">
+        <label for="lblFecVencimiento">Fecha Vencimiento</label>
+        <input type="date" name="lblFecVencimiento " id="datFecvencimiento">
+        <label for="CdMedicamento">Cantidad:</label>
+        <input type="number" id="CdMedicamento" name="" min="1" max="100" placeholder="Max 100">
+        <input type="color" value="#FFD433  " name="clrRiesgo" id="clrRiesgo">
+    </fieldset>
+    <fieldset>
+        <legend>Talento Humano</legend>
+        <label for="lblProfesion">Profecion</label>
+        <input type="radio" name="rdi" id="rdi" checked> Medico
+        <select name="slcGeneral" id="">
+            <optgroup label="1.Medico General ">
+                <option value="">Interno</option>"
+                <option value="">Externo</option>"
+            </optgroup>
+            <optgroup label="2.Medico Especialista ">
+                <option value="">Pediatra</option>
+                <option value="">Otorinonaringologo</option>
+                <option value="">Anestesiologo</option>
+                <option value="">Ginecologo</option>"
+            </optgroup>
+
+        </select>
+
+        <input type="radio" name="rdi" id="rdi" checked> Enfermero
+        <select name="" id="">
+            <optgroup label="Seleccione">
+                <option value="">Jefe</option>"
+                <option value="">Auxiliar</option>"
+            </optgroup>
+            <input type="radio" name="rdi" id="rdi"> Psicologia
+            <select name="slcGeneral" id="">
+                <optgroup label="3. Especialidad">
+                    <option value="">Psicologo</option>"
+                    <option value="">Psiquiatra</option>"
+                </optgroup>
+                </select>
+                <br>
+                <label for="lblPiso">Asignación de piso:</label>
+                <input list="Piso2" id="LstPiso" name="1stPiso"/>
+                <datalist id="Piso2">
+                    <option value="Primer piso"></option>
+                    <option value="Segundo piso"></option>
+                    <option value="Tercer piso"></option>
+                    <option value="Cuarto piso"></option>
+                </datalist>
+                <br>
+                <br>
+                    <label for="tblTurno">Turno</label>
+                    <br>
+                    <label for="tmpTurno">Entrada
+                    <input type="time" name="tmpTurno" id="tlbTurno" list="lstTurno">
+                <datalist id="lstTurno">
+                    <option value="07:30"></option>
+                    <option value="08:30"></option>
+                    <option value="09:30"></option>
+                    <option value="10:30"></option>
+                    <option value="11:30"></option>
+                    <option value="12:30"></option>
+                    <option value="13:30"></option>
+                </datalist>
+                <label for="tmpTurno">Salida
+                <input type="time" name="tmpTurno" id="tlbTurno" list="lstTurno">
+            <datalist id="lstTurno">
+                <option value="05:30"></option>
+                <option value="06:30"></option>
+                <option value="07:30"></option>
+                <option value="08:30"></option>
+                <option value="09:30"></option>
+                <option value="10:00"></option>
+            </datalist>
+            </label>
+            <br>
+            <label for="lblCansado">¿Que tan cansado esta?</label>
+            <input type="range" id="rgnCansado" min="o" max="10" steo="0.1">
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico de Barras con SVG</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla Básica</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="5"> <!-- Define los bordes y espacio entre celdas -->
+        <thead>
+            <tr>
+                <th>costos</th>
+                <th>tiempo</th>
+                <th>ok</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>19</td>
+                <td>4</td>
+                <td>
+                    <input type="checkbox" name="" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>8</td>
+                <td>
+                    <input type="checkbox" name="" value="" />
+                </td>
+                <tr>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>
+                        <input type="checkbox" name="" value="" />
+                    </td> <tr>
+                        <td>18</td>
+                        <td>16</td>
+                        <td>
+                            <input type="checkbox" name="" value="" />
+                        </td>
+            </tr>
+        </tbody>
+    </table>
+    <canvas id="myBarChart" width="100" height="100"></canvas>
+
+    <script>
+        // Configuración para el gráfico de barras
+        const ctx = document.getElementById('myBarChart').getContext('2d');
+        const myBarChart = new Chart(ctx, {
+            type: 'bar', // Tipo de gráfico
+            data: {
+                labels: ['1', '2', '3', '4', '5'], // Etiquetas del eje horizontal
+                datasets: [{
+                    label: 'Ventas', // Leyenda para la serie de datos
+                    data: [12, 19, 3, 5, 2], // Datos para el gráfico
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)', // Color de las barras
+                    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde de las barras
+                    borderWidth: 1 // Ancho del borde
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: {
+                            display: true, // Mostrar título del eje horizontal
+                            text: 'Meses' // Texto del título
+                        }
+                    },
+                    y: {
+                        beginAtZero: true, // Comienza el eje Y en cero
+                        title: {
+                            display: true, // Mostrar título del eje vertical
+                            text: 'Cantidad' // Texto del título
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
+</body>
+</html>
